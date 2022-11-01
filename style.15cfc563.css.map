@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.css"],"names":[],"mappings":"AAEA,OACE,aAAc,CACd,kBACF,CAEA,SACE,mBACF,CAEA,oBACE,gBACF","file":"style.15cfc563.css","sourceRoot":"..\\src","sourcesContent":["/* styles go here */\n\n.group {\n  display: block;\n  margin-bottom: 20px;\n}\n\n.inputEl {\n  padding-bottom: 10px;\n}\n\n.inputEl:last-child {\n  padding-bottom: 0;\n}\n"]}
