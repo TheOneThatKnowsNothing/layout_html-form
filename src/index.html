@@ -11,21 +11,25 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form>
+    <form
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      id="registrationForm"
+    >
       <fieldset class="group">
         <legend>Personal information</legend>
-        <div class="inputEl">
-          <label for="Surname">Surname:</label>
+        <div class="inputContainer">
+          <label for="surname">Surname:</label>
           <input
-            name="Surname"
+            name="surname"
             type="text"
             autocomplete="off"
           >
         </div>
-        <div class="inputEl">
-          <label for="Name">Name:</label>
+        <div class="inputContainer">
+          <label for="name">Name:</label>
           <input
-            name="Name"
+            name="name"
             type="text"
             autocomplete="off"
             minlength="1"
@@ -33,41 +37,41 @@
             required
           >
         </div>
-        <div class="inputEl">
-          <label for="Age">How old are You?</label>
+        <div class="inputContainer">
+          <label for="age">How old are You?</label>
           <input
-            name="Age"
+            name="age"
             type="number"
             min="1"
             max="100"
             value="12"
           >
         </div>
-        <div class="inputEl">
-          <label for="DateOfBirth">Full date of birth:</label>
-          <input name="DateOfBirth" type="date">
+        <div class="inputContainer">
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input name="dateOfBirth" type="date">
         </div>
-        <div class="inputEl">
-          <label for="AgreementTerms">I accept the term of the agreement</label>
-          <input name="AgreementTerms" type="checkbox">
+        <div class="inputContainer">
+          <label for="isAcceptAgreementTerms">I accept the term of the agreement</label>
+          <input name="isAcceptAgreementTerms" type="checkbox">
         </div>
       </fieldset>
 
       <fieldset class="group">
         <legend>Registration</legend>
-        <div class="inputEl">
-          <label for="Email">E-mail:</label>
+        <div class="inputContainer">
+          <label for="email">E-mail:</label>
           <input
-            name="Email"
+            name="email"
             type="email"
             placeholder="email@example.com"
             required
           >
         </div>
-        <div class="inputEl">
-          <label for="Password">Password:</label>
+        <div class="inputContainer">
+          <label for="password">Password:</label>
           <input
-            name="Password"
+            name="password"
             type="password"
             required
           >
@@ -75,49 +79,49 @@
       </fieldset>
       <fieldset class="group">
         <legend>An interesting fact about you!</legend>
-        <div class="inputEl">
-          <label for="CatLover">Do you love cats?</label>
+        <div class="inputContainer">
+          <label for="isLoveCats">Do you love cats?</label>
           <label for="catOption1">Yes</label>
           <input
-            name="CatLover"
+            name="isLoveCats"
             type="radio"
             value="Yes"
             id="catOption1"
           >
           <label for="catOption2">No</label>
           <input
-            name="CatLover"
+            name="isLoveCats"
             type="radio"
             value="No"
             id="catOption2"
           >
         </div>
-        <div class="inputEl">
-          <label for="Color">What is your favorite color?</label>
+        <div class="inputContainer">
+          <label for="color">What is your favorite color?</label>
           <input
-            name="Color"
+            name="color"
             type="color"
           >
         </div>
-        <div class="inputEl">
-          <label for="Time">What time do you go to bed?</label>
+        <div class="inputContainer">
+          <label for="goToBedTime">What time do you go to bed?</label>
           <input
-            name="Time"
+            name="goToBedTime"
             type="time"
           >
         </div>
-        <div class="inputEl">
-          <label for="Brand">What are your favorite brand of cars?</label>
-          <select name="Brand" multiple>
+        <div class="inputContainer">
+          <label for="favoriteCarBrands">What are your favorite brand of cars?</label>
+          <select name="favoriteCarBrands" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
           </select>
         </div>
-        <div class="inputEl">
-          <label for="Rate">How do you rate our work?</label>
+        <div class="inputContainer">
+          <label for="ourMark">How do you rate our work?</label>
           <input
-            name="Rate"
+            name="ourMark"
             type="range"
           >
         </div>
@@ -125,21 +129,25 @@
 
       <fieldset class="group">
         <legend>Additional info:</legend>
-        <div class="inputEl">
-          <label for="Comments">Comments:</label>
-          <textarea name="Comments" maxlength="250"></textarea>
+        <div class="inputContainer">
+          <label for="comments">Comments:</label>
+          <textarea name="comments" maxlength="250"></textarea>
         </div>
-        <div class="inputEl">
-          <label for="Recommend">Would you recommend us?</label>
-          <select name="Recommend">
+        <div class="inputContainer">
+          <label for="doRecommendUs">Would you recommend us?</label>
+          <select name="doRecommendUs">
             <option value="Yes">Yes</option>
             <option value="No">No</option>
           </select>
         </div>
       </fieldset>
-      <div class="inputEl">
-        <input type="submit" >
-      </div>
+      <button
+        type="submit"
+        form="registrationForm"
+        value="Submit"
+      >
+        Submit
+      </button>
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>

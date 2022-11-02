@@ -5,10 +5,10 @@
   margin-bottom: 20px;
 }
 
-.inputEl {
+.inputContainer {
   padding-bottom: 10px;
 }
 
-.inputEl:last-child {
+.inputContainer:last-child {
   padding-bottom: 0;
 }
